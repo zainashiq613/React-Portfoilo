@@ -5,18 +5,19 @@ import Footer from './pages/layout/Footer';
 import Experience from './pages/experience/Experience';
 import Project from './pages/project/Project';
 import Contact from './pages/contact/Contact';
+import HomePage from './pages';
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/experience" element={<Experience />} />
-        <Route exact path="/project" element={<Project />} />
-        <Route exact path="/contact" element={<Contact />} />
+        <Route path="/" element={<HomePage />}>
+          <Route index path="" element={<Home />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="project" element={<Project />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
       </Routes>
-      <Footer />
     </div>
   );
 }

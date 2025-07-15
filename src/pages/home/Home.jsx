@@ -1,7 +1,176 @@
-import React from 'react';
+import { FaStar } from 'react-icons/fa';
+import { GoArrowUpRight } from 'react-icons/go';
+import { PiStarFourFill } from 'react-icons/pi';
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <section>
+      <section className="max-w-[1440px] px-[30px] flex flex-col items-center justify-center mx-auto">
+        <div className="mt-5 w-full flex flex-col gap-3 items-center justify-center">
+          <span className="text-center border border-dark-text px-4.5 text-dark-text py-1 rounded-2xl">
+            Hello!
+          </span>
+          <h1 className="text-6xl text-center">
+            I’m <span className="text-primary">Hammas</span>,<br />
+            Product Designer
+          </h1>
+        </div>
+        <div className="mt-15 flex justify-between h-[42.5vh] w-full">
+          <div>
+            <p className="text-lg text-secondary w-[400px]">
+              I’m <span className="text-primary">Hammas</span> , A product designer from Pakistan,
+              My interests include Web flow, Product Designer, Bubble.io, Graphic Design, Designing
+              Start-ups, Cricket, and Music.
+            </p>
+          </div>
+          <div className="bg-[#6AC7D980] rounded-t-full w-[35%] h-[260px] bottom-[11.4%] left-[33%] flex items-center justify-center absolute">
+            <img src="/public/IMG_0825 1.png" className="relative bottom-[24%] w-[351px]" alt="" />
+          </div>
+          <div className="flex flex-col items-end gap-1.5">
+            <div className="flex items-center gap-1 justify-end">
+              <FaStar fill="#4FBDD2" size={24} />
+              <FaStar fill="#4FBDD2" size={24} />
+              <FaStar fill="#4FBDD2" size={24} />
+              <FaStar fill="#4FBDD2" size={24} />
+              <FaStar fill="#4FBDD2" size={24} />
+            </div>
+            <p className="text-5xl font-bold text-dark-text">5+ Years</p>
+            <span className="text-dark-text text-xl">Experience</span>
+          </div>
+        </div>
+      </section>
+      <div className="bg-primary py-3.5">
+        <div className="bg-white py-1">
+          <marquee behavior="smooth" direction="">
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <h1 className="text-black text-3xl">UX Design</h1>
+                <PiStarFourFill fill="#4FBDD2" />
+              </div>
+              <div className="flex items-center gap-2">
+                <h1 className="text-black text-3xl">App Design</h1>
+                <PiStarFourFill fill="#4FBDD2" />
+              </div>
+              <div className="flex items-center gap-2">
+                <h1 className="text-black text-3xl">Dashboard</h1>
+                <PiStarFourFill fill="#4FBDD2" />
+              </div>
+              <div className="flex items-center gap-2">
+                <h1 className="text-black text-3xl">Wireframe</h1>
+                <PiStarFourFill fill="#4FBDD2" />
+              </div>
+              <div className="flex items-center gap-2">
+                <h1 className="text-black text-3xl">User Research</h1>
+                <PiStarFourFill fill="#4FBDD2" />
+              </div>
+            </div>
+          </marquee>
+        </div>
+      </div>
+      <section className="max-w-[1440px] px-[30px] py-10">
+        <div className="grid grid-cols-12 gap-3 w-full">
+          <div class="col-span-3 group w-full h-83 [perspective:1000px]">
+            <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div class="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
+                <img src="/linkedin.png" alt="" />
+              </div>
+              <div class="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
+                <div className="flex w-full items-center justify-between">
+                  <div className="rounded-full flex items-center justify-center w-[60px] h-[60px] bg-primary">
+                    <img
+                      className="w-full rounded-full h-full object-cover"
+                      src="/public/IMG_0825 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-[50px] h-[50px]">
+                    <img
+                      className="w-full h-full object-cover"
+                      src="/public/pngwing.com (3) 1.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p>Hammas Munir</p>
+                <div className="flex gap-1 items-center text-sm text-[#A4A4A4] flex-wrap">
+                  <p>Director</p> |<p>Product Designer</p> | <p>UI/UX</p>
+                  <p>Front-End Developer</p> |<p>WordPress Expert</p>
+                </div>
+                <p className="text-sm text-[#454545]">
+                  I lead teams to create impactful, user-focused digital products using UI/UX
+                  design, front-end development, and WordPress. #ui/ux #front-end #wordpress #
+                  <span className="text-[#337BFF]">certificate!</span>
+                </p>
+                <div className="flex justify-end">
+                  <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center">
+                    <GoArrowUpRight size={30} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-3 group w-full h-83 [perspective:1000px]">
+            <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div class="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
+                <img src="/behance.png" alt="" />
+              </div>
+              <div class="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
+                <div className="flex w-full items-center justify-between">
+                  <div className="rounded-full flex items-center justify-center w-[60px] h-[60px] bg-primary">
+                    <img
+                      className="w-full rounded-full h-full object-cover"
+                      src="IMG_0825 1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="flex items-center justify-center w-[50px] h-[50px]">
+                    <img className="w-full h-full object-cover" src="/Mask group.png" alt="" />
+                  </div>
+                </div>
+                <p>Hammas Munir</p>
+                <div className="flex gap-1 items-center text-sm text-[#A4A4A4] flex-wrap">
+                  <p>Director</p> |<p>Product Designer</p> | <p>UI/UX</p>
+                </div>
+                <div className="w-[280px] h-[120px]">
+                  <img
+                    className="w-full h-full object-cover"
+                    src="/public/image 24979.png"
+                    alt=""
+                  />
+                </div>
+                <div className="flex justify-end">
+                  <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center">
+                    <GoArrowUpRight size={30} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="group transition duration-300 ease-in-out col-span-6 border shadow rounded-2xl p-6 flex flex-col justify-between">
+            <div className="flex w-full justify-between items-center">
+              <h1 className="text-3xl font-bold">My Story</h1>
+              <div class="inline-block text-4xl">
+                <span class="group-hover:hidden transition duration-300 hover:scale-105 cursor-pointer">
+                  👀
+                </span>
+                <span class="hidden group-hover:inline transition duration-300">😊</span>
+              </div>
+            </div>
+            <p className="text-[#555555E5] text-lg">
+              I hold a Bachelor's degree in design and bring over 5 years of experience in creating
+              impactful digital products. My journey began in graphic design, but my passion for
+              solving user problems led me into product and user experience design.
+            </p>
+            <p className="text-[#555555E5] text-lg">
+              Throughout my career, I’ve worked with multiple software houses and start-ups,
+              collaborating with cross-functional teams and mentors. I've successfully delivered 50+
+              projects, helping businesses turn ideas into user-friendly, functional solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 }
 
 export default Home;

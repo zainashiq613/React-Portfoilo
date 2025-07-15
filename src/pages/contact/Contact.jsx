@@ -1,8 +1,5 @@
 import { BiLogoFacebookCircle } from 'react-icons/bi';
-import { FaStar } from 'react-icons/fa';
-import { MdVerifiedUser } from 'react-icons/md';
 import { PiWhatsappLogoLight } from 'react-icons/pi';
-import { RiMedalFill } from 'react-icons/ri';
 import { SlSocialBehance, SlSocialInstagram, SlSocialLinkedin } from 'react-icons/sl';
 import Input from '../../components/Input';
 
@@ -28,26 +25,6 @@ function Contact() {
               <span className="text-primary">Let’s Discuss</span>
             </h1>
             <Input />
-            <div className="flex items-center gap-15">
-              <p className="text-secondary text-base flex items-center gap-1">
-                <span>
-                  <FaStar fill="#4FBDD2" />
-                </span>
-                4.9/5 Average Ratings
-              </p>
-              <p className="text-secondary text-base flex items-center gap-1">
-                <span>
-                  <RiMedalFill fill="#4FBDD2" />
-                </span>
-                25+ Winning Awards
-              </p>
-              <p className="text-secondary text-base flex items-center gap-1">
-                <span>
-                  <MdVerifiedUser fill="#4FBDD2" />
-                </span>
-                Certified Product Designer
-              </p>
-            </div>
           </div>
           <div className="bg-white border rounded-2xl shadow p-7 flex flex-col gap-4">
             <p className="text-secondary text-4xl">Elsewhere</p>

@@ -24,7 +24,7 @@ function Home() {
             </p>
           </div>
           <div className="bg-[#6AC7D980] rounded-t-full w-[35%] h-[260px] bottom-[11.4%] left-[33%] flex items-center justify-center absolute">
-            <img src="/public/IMG_0825 1.png" className="relative bottom-[24%] w-[351px]" alt="" />
+            <img src="/IMG_0825 1.png" className="relative bottom-[24%] w-[351px]" alt="" />
           </div>
           <div className="flex flex-col items-end gap-1.5">
             <div className="flex items-center gap-1 justify-end">
@@ -79,14 +79,14 @@ function Home() {
                   <div className="rounded-full flex items-center justify-center w-[60px] h-[60px] bg-primary">
                     <img
                       className="w-full rounded-full h-full object-cover"
-                      src="/public/IMG_0825 1.png"
+                      src="/IMG_0825 1.png"
                       alt=""
                     />
                   </div>
                   <div className="flex items-center justify-center w-[50px] h-[50px]">
                     <img
                       className="w-full h-full object-cover"
-                      src="/public/pngwing.com (3) 1.png"
+                      src="/pngwing.com (3) 1.png"
                       alt=""
                     />
                   </div>
@@ -132,11 +132,7 @@ function Home() {
                   <p>Director</p> |<p>Product Designer</p> | <p>UI/UX</p>
                 </div>
                 <div className="w-[280px] h-[120px]">
-                  <img
-                    className="w-full h-full object-cover"
-                    src="/public/image 24979.png"
-                    alt=""
-                  />
+                  <img className="w-full h-full object-cover" src="/image 24979.png" alt="" />
                 </div>
                 <div className="flex justify-end">
                   <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center">

@@ -21,7 +21,7 @@ function Input({ cn }) {
           />
         </div>
         <div className="col-span-2 flex justify-end">
-          <Button />
+          <Button text={'Send'} cn={'underline'} />
         </div>
       </div>
       <div className="flex items-center gap-15">

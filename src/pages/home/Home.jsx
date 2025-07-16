@@ -3,6 +3,7 @@ import { GoArrowUpRight } from 'react-icons/go';
 import { PiStarFourFill } from 'react-icons/pi';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import { MdDownloadForOffline } from 'react-icons/md';
 
 function Home() {
   return (
@@ -27,12 +28,12 @@ function Home() {
           </div>
           <div className="bg-[#6AC7D980] rounded-t-full w-[35%] h-[260px] bottom-[11.4%] left-[33%] flex items-center justify-center absolute">
             <img src="/IMG_0825 1.png" className="relative bottom-[24%] w-[351px]" alt="" />
-            <div className="absolute flex border rounded-3xl p-1">
+            <div className="absolute backdrop-blur-[5px] flex border rounded-3xl p-1">
               <div>
-                <Button />
+                <Button text={'Portfolio'} position={'right'} icon={<GoArrowUpRight size={25} />} />
               </div>
               <div>
-                <Button />
+                <Button text={'Hire Me'} />
               </div>
             </div>
           </div>
@@ -182,12 +183,34 @@ function Home() {
             </h1>
             <Input cn={'w-full'} />
           </div>
-          <div className="col-span-3 flex gap-6 flex-col items-center bg-white pt-6 border shadow rounded-2xl">
+          <div class="col-span-3 relative bg-white border shadow rounded-2xl overflow-hidden group">
+            <div class="pt-6 flex gap-6 flex-col items-center">
+              <h1 className="text-3xl text-center font-bold">CV/Resume</h1>
+              <div className="w-[200px]">
+                <img className="w-full h-full" src="/173784 1.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-white flex flex-col gap-3 items-center text-lg font-semibold 
+              opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 
+              transition-all duration-100 ease-in-out rounded-2xl py-5"
+            >
+              <p className="text-dark-text text-2xl">Hammas’s Resume</p>
+              <p className="text-xl text-secondary-text">Product Design</p>
+              <span>
+                <MdDownloadForOffline fill="#4FBDD2" size={65} />
+              </span>
+              <span className="text-xl text-[#0077FF] underline cursor-pointer font-medium">
+                View
+              </span>
+            </div>
+          </div>
+          {/* <div className="col-span-3 flex gap-6 flex-col items-center bg-white pt-6 border shadow rounded-2xl">
             <h1 className="text-3xl text-center font-bold">CV/Resume</h1>
             <div className="w-[200px]">
               <img className="w-full h-full" src="/173784 1.png" alt="" />
             </div>
-          </div>
+          </div> */}
           <div className="col-span-5">
             <img className="w-full h-full" src="/pic.png" alt="" />
           </div>
@@ -212,7 +235,7 @@ function Home() {
               </div>
             </div>
             <div>
-              <Button />
+              <Button text={'Hire Now'} position={'right'} icon={<GoArrowUpRight size={25} />} />
             </div>
           </div>
         </div>

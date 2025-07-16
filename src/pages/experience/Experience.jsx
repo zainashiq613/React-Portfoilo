@@ -88,7 +88,7 @@ function Experience() {
   ];
   return (
     <section className="px-[150px]">
-      <section class="max-w-[1440px] flex flex-col gap-6 mx-auto py-12">
+      <section className="max-w-[1440px] flex flex-col gap-6 mx-auto py-12">
         {experience.map((item) => (
           <div className="grid grid-cols-12 gap-6" key={item.id}>
             <div className="col-span-3 bg-white flex items-center justify-center px-10 rounded-2xl shadow border h-32">

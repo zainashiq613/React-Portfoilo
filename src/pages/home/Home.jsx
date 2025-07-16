@@ -79,12 +79,12 @@ function Home() {
       </div>
       <section className="max-w-[1440px] px-[150px] py-10">
         <div className="grid grid-cols-12 gap-x-3 gap-y-9 w-full">
-          <div class="col-span-3 group w-full h-83 [perspective:1000px]">
-            <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div class="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
+          <div className="col-span-3 group w-full h-83 [perspective:1000px]">
+            <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
                 <img src="/linkedin.png" alt="" />
               </div>
-              <div class="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
+              <div className="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
                 <div className="flex w-full items-center justify-between">
                   <div className="rounded-full flex items-center justify-center w-[60px] h-[60px] bg-primary">
                     <img
@@ -119,14 +119,14 @@ function Home() {
               </div>
             </div>
           </div>
-          <div class="col-span-3 group w-full h-83 [perspective:1000px]">
-            <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div class="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
+          <div className="col-span-3 group w-full h-83 [perspective:1000px]">
+            <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
                 <div className="w-[90%]">
                   <img src="/behance.png" alt="" />
                 </div>
               </div>
-              <div class="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
+              <div className="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
                 <div className="flex w-full items-center justify-between">
                   <div className="rounded-full flex items-center justify-center w-[60px] h-[60px] bg-primary">
                     <img
@@ -157,11 +157,11 @@ function Home() {
           <div className="group transition duration-300 ease-in-out col-span-6 border shadow rounded-2xl p-6 flex flex-col justify-between">
             <div className="flex w-full justify-between items-center">
               <h1 className="text-3xl font-bold">My Story</h1>
-              <div class="inline-block text-4xl">
-                <span class="group-hover:hidden transition duration-300 hover:scale-105 cursor-pointer">
+              <div className="inline-block text-4xl">
+                <span className="group-hover:hidden transition duration-300 hover:scale-105 cursor-pointer">
                   👀
                 </span>
-                <span class="hidden group-hover:inline transition duration-300">😊</span>
+                <span className="hidden group-hover:inline transition duration-300">😊</span>
               </div>
             </div>
             <p className="text-[#555555E5] text-md">

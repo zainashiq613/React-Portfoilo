@@ -40,7 +40,7 @@ function Navbar() {
 
   return (
     <section className="px-[150px]">
-      <section class="mt-3 rounded-[50px] flex items-center text-white justify-between max-w-[1440px] mx-auto border bg-dark-text py-1.5 px-1.5">
+      <section className="mt-3 rounded-[50px] flex items-center text-white justify-between max-w-[1440px] mx-auto border bg-dark-text py-1.5 px-1.5">
         {pages.map((item) => (
           <LinkItem key={item.id} page={item} pathname={pathname} />
         ))}

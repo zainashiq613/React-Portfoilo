@@ -17,7 +17,7 @@ function Contact() {
   ];
   return (
     <section className="px-[150px]">
-      <section class="max-w-[1440px] mx-auto">
+      <section className="max-w-[1440px] mx-auto">
         <div className="mt-6 flex flex-col gap-6">
           <div className="bg-white shadow border rounded-2xl py-5 w-full flex flex-col gap-3 items-center">
             <h1 className="text-4xl text-secondary font-semibold text-center">

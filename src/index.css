@@ -10,6 +10,7 @@
   --gradient-primary: linear-gradient(180deg, #0c6189 0%, #073c5b 100%);
   --primary: #4fbdd2;
   --dark-text: #16242a;
+  --secondary-text: #6d6d6d;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -59,6 +60,7 @@ button {
 @theme {
   --color-primary: var(--primary);
   --color-dark-text: var(--dark-text);
+  --color-secondary-text: var(--secondary-text);
   --font-inter: var(--inter);
   --font-fira: var(--fira);
 }

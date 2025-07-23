@@ -7,13 +7,13 @@ function HomePage() {
   return (
     <>
       <section>
-        <div>
+        <div className="hidden lg:block">
           <Navbar />
         </div>
         <main>
           <Outlet />
         </main>
-        <div>
+        <div className="hidden lg:block">
           <Footer />
         </div>
       </section>

@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router';
 import Logo from '../../assets/svgs/Logo';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const pages = [
   {
@@ -39,7 +39,7 @@ function Navbar() {
   const { pathname } = useLocation();
 
   return (
-    <section className="px-[150px]">
+    <section className="fixed z-50 w-full h-[68px] px-[150px]">
       <section className="mt-3 rounded-[50px] flex items-center text-white justify-between max-w-[1440px] mx-auto border bg-dark-text py-1.5 px-1.5">
         {pages.map((item) => (
           <LinkItem key={item.id} page={item} pathname={pathname} />

@@ -8,7 +8,7 @@ import MobileApps from '../../components/projects/MobileApps';
 function Project() {
   const [tab, setTab] = useState('Website designs');
   return (
-    <section className="px-[150px]">
+    <section className="relative top-15 pb-12 px-[150px]">
       <section className="max-w-[1440px] mx-auto flex flex-col items-center gap-8 py-12">
         <h1 className="text-5xl font-semibold text-secondary w-full">
           Lets have a look at my <span className="text-primary">Projects</span>
@@ -17,6 +17,9 @@ function Project() {
           {['Website designs', 'Landing Page’s', 'Dashboard Design', 'Mobile App'].map((item) => (
             <div key={item}>
               <Button
+                cn={`border border-secondary-text bg-transparent !text-secondary-text ${
+                  item === tab ? '!bg-primary !border-primary !text-white' : ''
+                }`}
                 text={item}
                 onClick={() => {
                   setTab(item);

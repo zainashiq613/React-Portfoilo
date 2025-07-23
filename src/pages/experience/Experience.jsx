@@ -87,16 +87,14 @@ function Experience() {
     },
   ];
   return (
-    <section className="px-[150px]">
+    <section className="relative top-17 pb-12 px-6 lg:px-[150px]">
       <section className="max-w-[1440px] flex flex-col gap-6 mx-auto py-12">
         {experience.map((item) => (
-          <div className="grid grid-cols-12 gap-6" key={item.id}>
-            <div className="col-span-3 bg-white flex items-center justify-center px-10 rounded-2xl shadow border h-32">
-              <div className="w-[200px]">
-                <img src={item.src} className="w-full" alt="" />
-              </div>
+          <div className="grid grid-cols-12 gap-6 items-start" key={item.id}>
+            <div className="col-span-12 md:col-span-3 bg-white flex items-center justify-center px-10 rounded-2xl shadow border py-7">
+              <img src={item.src} className="w-full" alt="" />
             </div>
-            <div className="col-span-9 bg-white px-4 border flex flex-col gap-5 shadow rounded-2xl py-6">
+            <div className="col-span-12 md:col-span-9 bg-white px-4 border flex flex-col gap-5 shadow rounded-2xl py-6">
               <div>
                 <h2 className="text-2xl font-bold">{item.title}</h2>
                 <p className="text-secondary-text text-base">

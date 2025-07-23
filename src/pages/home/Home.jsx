@@ -8,7 +8,7 @@ import { MdDownloadForOffline } from 'react-icons/md';
 function Home() {
   return (
     <section>
-      <section className="max-w-[1440px] px-[150px] flex flex-col items-center justify-center mx-auto">
+      <section className="relative top-18 max-w-[1728px] lg:px-[150px] flex flex-col items-center justify-center mx-auto">
         <div className="mt-5 w-full flex flex-col gap-3 items-center justify-center">
           <span className="text-center border border-dark-text px-4.5 text-dark-text py-1 rounded-2xl">
             Hello!
@@ -18,7 +18,7 @@ function Home() {
             Product Designer
           </h1>
         </div>
-        <div className="mt-15 flex justify-between h-[42.5vh] w-full">
+        <div className="mt-15 flex 2xl:flex-col justify-between h-[52.5vh] w-full">
           <div>
             <p className="text-lg text-secondary w-[400px]">
               I’m <span className="text-primary">Hammas</span> , A product designer from Pakistan,
@@ -27,7 +27,7 @@ function Home() {
             </p>
           </div>
           <div className="bg-[#6AC7D980] rounded-t-full w-[35%] h-[260px] bottom-[11.4%] left-[33%] flex items-center justify-center absolute">
-            <img src="/IMG_0825 1.png" className="relative bottom-[24%] w-[351px]" alt="" />
+            <img src="/IMG_0825 1.png" className="relative bottom-[23%] w-[341px]" alt="" />
             <div className="absolute backdrop-blur-[5px] flex border rounded-3xl p-1">
               <div>
                 <Button text={'Portfolio'} position={'right'} icon={<GoArrowUpRight size={25} />} />
@@ -78,9 +78,9 @@ function Home() {
           </marquee>
         </div>
       </div>
-      <section className="max-w-[1440px] px-[150px] py-10">
+      <section className="max-w-[1440px] lg:px-[150px] py-10">
         <div className="grid grid-cols-12 gap-x-3 gap-y-9 w-full">
-          <div className="col-span-3 group w-full h-83 [perspective:1000px]">
+          <div className="col-span-12 lg:col-span-3 group w-full h-83 [perspective:1000px]">
             <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
                 <img src="/linkedin.png" alt="" />
@@ -120,7 +120,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="col-span-3 group w-full h-83 [perspective:1000px]">
+          <div className="col-span-12 lg:col-span-3 group w-full h-83 [perspective:1000px]">
             <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
               <div className="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
                 <div className="w-[90%]">
@@ -176,14 +176,14 @@ function Home() {
               projects, helping businesses turn ideas into user-friendly, functional solutions.
             </p>
           </div>
-          <div className="col-span-9 flex flex-col gap-5">
+          <div className="col-span-12 lg:col-span-9 flex flex-col gap-5">
             <h1 className="text-5xl font-semibold">
               Have an Awsome Project <br /> Idea?{' '}
               <span className="text-primary">Let’s Discuss</span>
             </h1>
             <Input cn={'w-full'} />
           </div>
-          <div class="col-span-3 relative bg-white border shadow rounded-2xl overflow-hidden group">
+          <div class="col-span-12 lg:col-span-3 relative bg-white border shadow rounded-2xl overflow-hidden group">
             <div class="pt-6 flex gap-6 flex-col items-center">
               <h1 className="text-3xl text-center font-bold">CV/Resume</h1>
               <div className="w-[200px]">
@@ -205,16 +205,10 @@ function Home() {
               </span>
             </div>
           </div>
-          {/* <div className="col-span-3 flex gap-6 flex-col items-center bg-white pt-6 border shadow rounded-2xl">
-            <h1 className="text-3xl text-center font-bold">CV/Resume</h1>
-            <div className="w-[200px]">
-              <img className="w-full h-full" src="/173784 1.png" alt="" />
-            </div>
-          </div> */}
-          <div className="col-span-5">
+          <div className="col-span-12 lg:col-span-5">
             <img className="w-full h-full" src="/pic.png" alt="" />
           </div>
-          <div className="col-span-7 p-9 flex flex-col gap-5">
+          <div className="col-span-12 lg:col-span-7 p-9 flex flex-col gap-5">
             <h3 className="text-5xl font-semibold">
               Why <span className="text-primary">Hire me</span> ?
             </h3>

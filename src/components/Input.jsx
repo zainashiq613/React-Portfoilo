@@ -24,7 +24,7 @@ function Input({ cn }) {
           <Button text={'Send'} cn={'underline'} />
         </div>
       </div>
-      <div className="flex items-center gap-15">
+      <div className="flex flex-col lg:flex-row items-center gap-15">
         <p className="text-secondary text-base flex items-center gap-1">
           <span>
             <FaStar fill="#4FBDD2" />

@@ -10,6 +10,7 @@
   --gradient-primary: linear-gradient(180deg, #0c6189 0%, #073c5b 100%);
   --primary: #4fbdd2;
   --dark-text: #16242a;
+  --secondary: #92999c;
   --secondary-text: #6d6d6d;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -125,6 +126,7 @@ button {
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);

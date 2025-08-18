@@ -14,7 +14,7 @@ function Project() {
           Lets have a look at my <span className="text-primary">Projects</span>
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 items-center gap-4">
-          {['Website designs', 'Landing Page’s', 'Dashboard Design', 'Mobile App'].map((item) => (
+          {['Website designs', 'Landing Pages', 'Dashboard Design', 'Mobile App'].map((item) => (
             <div key={item}>
               <Button
                 cn={`w-full border border-secondary-text text-xs lg:text-base md:text-[11px] bg-transparent !text-secondary-text ${
@@ -30,7 +30,7 @@ function Project() {
         </div>
         <div className="w-full">
           <div className="w-full">{tab === 'Website designs' && <WebsiteDesigns />}</div>
-          <div className="w-full">{tab === 'Landing Page’s' && <LandingPages />}</div>
+          <div className="w-full">{tab === 'Landing Pages' && <LandingPages />}</div>
           <div className="w-full">{tab === 'Dashboard Design' && <Dashboards />}</div>
           <div className="w-full">{tab === 'Mobile App' && <MobileApps />}</div>
         </div>

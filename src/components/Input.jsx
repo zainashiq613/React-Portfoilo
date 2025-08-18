@@ -15,29 +15,29 @@ function Input({ cn }) {
             <MdEmail fill="#4FBDD2" size={30} />
           </div>
           <input
-            className="text-[#282828] text-xl font-bold bg-white w-[calc(100%-50px)] outline-none h-full"
+            className="text-[#282828] text-sm md:text-base font-bold bg-white w-[calc(100%-50px)] outline-none h-full"
             placeholder="h.mhammas@gmail.com"
             type="email"
           />
         </div>
         <div className="col-span-2 flex justify-end">
-          <Button text={'Send'} cn={'underline'} />
+          <Button text={'Send'} cn={'underline !px-2 md:!px-4 md:text-base text-sm'} />
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-center gap-15">
-        <p className="text-secondary text-base flex items-center gap-1">
+      <div className="w-full flex flex-wrap gap-x-10 gap-y-3 justify-center md:flex-row md:items-center">
+        <p className="text-secondary text-xs md:text-sm lg:text-base flex items-center gap-1">
           <span>
             <FaStar fill="#4FBDD2" />
           </span>
           4.9/5 Average Ratings
         </p>
-        <p className="text-secondary text-base flex items-center gap-1">
+        <p className="text-secondary text-xs md:text-sm lg:text-base flex items-center gap-1">
           <span>
             <RiMedalFill fill="#4FBDD2" />
           </span>
           25+ Winning Awards
         </p>
-        <p className="text-secondary text-base flex items-center gap-1">
+        <p className="text-secondary text-xs md:text-sm lg:text-base flex items-center gap-1">
           <span>
             <MdVerifiedUser fill="#4FBDD2" />
           </span>

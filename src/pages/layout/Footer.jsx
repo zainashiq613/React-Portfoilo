@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <section className="relative px-[150px] py-5">
+    <section className="relative py-5">
       <section className="mt-3 rounded-lg p-4 flex items-center border border-[#EEEEEE] bg-white justify-between max-w-[1440px] mx-auto">
         <div className="bg-primary rounded-lg w-full flex items-center justify-between px-5 py-2">
           <div className="text-white">h.mhammas@gmail.com</div>

@@ -503,58 +503,6 @@ const projects = [
       { id: '5', text: 'Built-in licensing and royalty management tools' },
       { id: '6', text: 'Secure checkout and user dashboard for purchases' },
     ],
-    detailImage: '/invoyx-detail-image.png',
-    overViewText:
-      'Invoyx is a smart delivery and payment platform made for online businesses. It helps merchants manage their orders, get fast payments, and track deliveries — all from one easy-to-use system.The platform includes an admin dashboard, merchant and driver apps, role-based access, bulk delivery, and same-day shipping. Everything is controlled from one place, making the delivery process faster, easier, and more organized.',
-    overViewImage: '',
-    problemsText:
-      'Many e-commerce businesses face delays in cash-on-delivery payments, lack proper tracking, and have no control over their delivery process. Traditional courier services don’t offer role-based access, mobile apps for staff, or real-time updates — which leads to mismanagement, slow operations, and poor customer experience.',
-    problemsImage: '/problem.png',
-    designImage: '/design.png',
-    empathyText:
-      'To better understand our users and solve their real problems, we created an empathy map based on user research and interviews.',
-    empathyImage: '/empathy.png',
-    userImage: '/user.png',
-    userData: [
-      { id: 1, key: 'NAME', value: 'Adeel Ahmed' },
-      { id: 2, key: 'AGE', value: 35 },
-      { id: 3, key: 'Role', value: 'University of Calgary' },
-      { id: 4, key: 'JOB', value: 'Online clothing store' },
-      { id: 5, key: 'LOCATION', value: 'Calgary, Alberta' },
-      { id: 6, key: 'HOBBIES', value: 'Hiking and dancing' },
-    ],
-    userBio:
-      'Adeel runs a growing online fashion store that delivers across Pakistan. He manages a small team and depends heavily on courier services for COD orders. As his business scales, Adeel needs better control over delivery operations, faster cash flow, and clear reporting to make informed decisions.',
-    userNeeds: [
-      { id: 1, text: 'A unified dashboard to monitor everything' },
-      { id: 2, text: 'Transparent payment and delivery status' },
-      { id: 3, text: 'Automated reports and insights' },
-      { id: 4, text: 'Easy order and inventory management' },
-    ],
-    painPoints: [
-      { id: 1, text: 'Frequent delays in receiving payments' },
-      { id: 2, text: 'No trust in current delivery tracking system' },
-      { id: 3, text: 'Has to call support too often for updates' },
-      { id: 4, text: 'Lacks a central platform to manage everything' },
-    ],
-    userGoals: [
-      { id: 1, text: 'Track deliveries in real-time without relying on support' },
-      { id: 2, text: 'Get faster COD (Cash on Delivery) payments' },
-      { id: 3, text: 'Gain control over team and logistics' },
-      { id: 4, text: 'Reduce dependency on manual reporting tools like Excel' },
-    ],
-    primaryColor: [
-      { id: 1, color: '#004759', title: '004759' },
-      { id: 2, color: '#2AAFBA', title: '2AAFBA' },
-      { id: 3, color: '#2E2A2A', title: '2E2A2A' },
-      { id: 4, color: '#FFFFFF', title: 'FFFFFF' },
-    ],
-    otherColor: [
-      { id: 1, color: '#6B6B6B', title: '6B6B6B' },
-      { id: 1, color: '#D4D4D4', title: 'D4D4D4' },
-      { id: 1, color: '#EBEBEB', title: 'EBEBEB' },
-    ],
-    typography: [],
   },
   {
     projectType: ['Mobile App'],

@@ -53,7 +53,7 @@ function Home() {
               className="relative h-80 md:h-108 lg:h-127 bottom-10 md:bottom-12 lg:bottom-25"
               alt=""
             />
-            <div className="absolute backdrop-blur-[5px] flex gap-2 border rounded-3xl p-1">
+            <div className="absolute bottom-20 backdrop-blur-[5px] flex gap-2 border rounded-3xl p-1">
               <div>
                 <Button
                   text={'Portfolio'}

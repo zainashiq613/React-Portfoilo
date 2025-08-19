@@ -27,26 +27,30 @@ function ProjectDetail() {
         </div>
         <div>
           <div className="flex flex-col gap-12.5">
-            <div className="w-full rounded-2xl bg-[#E1E2E5]">
-              <img className="w-full h-[22%]" src={project?.detailImage} alt="" />
-            </div>
-            <div className="flex flex-col md:flex-row items-center gap-10 justify-between p-5 bg-[#E1E2E5] lg:p-19 rounded-2xl">
-              <div className="">
-                <img className="w-full h-full" src={project?.overViewImage} alt="" />
+            {project?.detailImage && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.detailImage} alt="" />
               </div>
-              <div className="flex flex-col gap-3">
-                <div>
-                  <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
-                    Product Overview
-                  </h3>
-                  <p className="w-[117px] max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
+            )}
+            {project?.overViewText && project?.overViewImage && (
+              <div className="flex flex-col md:flex-row items-center gap-10 justify-between p-5 bg-[#E1E2E5] lg:p-19 rounded-2xl">
+                <div className="">
+                  <img className="w-full h-full" src={project?.overViewImage} alt="" />
                 </div>
-                <p className="max-w-[721px] text-sm md:text-base lg:text-2xl font-medium text-[#313D4F]">
-                  {project.overViewText}
-                </p>
+                <div className="flex flex-col gap-3">
+                  <div>
+                    <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
+                      Product Overview
+                    </h3>
+                    <p className="w-[117px] max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
+                  </div>
+                  <p className="max-w-[721px] text-sm md:text-base lg:text-2xl font-medium text-[#313D4F]">
+                    {project.overViewText}
+                  </p>
+                </div>
               </div>
-            </div>
-            {project.id === 7 && (
+            )}
+            {project?.id === 7 && (
               <div className="flex flex-col gap-12.5">
                 <div className="flex flex-col-reverse md:flex-row items-center gap-10 justify-between bg-[#36393C] p-5 lg:px-17.5 rounded-2xl">
                   <div className="">
@@ -127,7 +131,7 @@ function ProjectDetail() {
                 </div>
               </div>
             )}
-            {project.id === 9 && (
+            {project?.id === 9 && (
               <div className="flex flex-col items-center gap-10 justify-between bg-[#214B56] p-5 lg:p-10 rounded-2xl">
                 <div className="flex flex-col gap-6">
                   <div>
@@ -148,7 +152,7 @@ function ProjectDetail() {
                 </div>
               </div>
             )}
-            {project.id === 10 && (
+            {project?.id === 10 && (
               <div className="flex flex-col gap-12.5">
                 <div className="flex flex-col items-center gap-10 justify-between bg-[#214B56] p-5 md:p-10 rounded-2xl">
                   <div className="flex flex-col gap-6">
@@ -211,7 +215,7 @@ function ProjectDetail() {
                 </div>
               </div>
             )}
-            {project.id === 1 && (
+            {project?.id === 1 && (
               <div className="flex flex-col gap-12.5">
                 <div className="flex flex-col items-center gap-10 justify-between bg-[#214B56] p-5 lg:p-10 rounded-2xl">
                   <div className="flex flex-col gap-6">
@@ -287,7 +291,7 @@ function ProjectDetail() {
                 </div>
               </div>
             )}
-            {project.id === 2 && (
+            {project?.id === 2 && (
               <div className="flex flex-col gap-12.5">
                 <div className="flex flex-col md:flex-row items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
                   <div className="flex flex-col gap-6">
@@ -328,211 +332,226 @@ function ProjectDetail() {
                 <img src={project?.fullWebImage} alt="" />
               </div>
             )}
-            {project.id === 3 && (
+            {project?.id === 3 && (
               <div className="rounded-2xl">
                 <img src="/peach-landing.png" alt="" />
               </div>
             )}
-            <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-between bg-[#E1E2E5] p-5 lg:p-10 xl:p-19 rounded-2xl">
-              <div className="flex flex-col gap-3 md:gap-6">
-                <div>
-                  <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
-                    Problems
-                  </h3>
-                  <p className="w-22 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
-                </div>
-                <p className="md:max-w-[400px] lg:max-w-[600px] text-sm md:text-base xl:text-xl text-[#313D4F]">
-                  {project?.problemsText}
-                </p>
-              </div>
-              <div className="w-[330px] h-[250px]">
-                <img className="w-full h-full" src={project?.problemsImage} alt="" />
-              </div>
-            </div>
-            <div className="flex flex-col items-center gap-5.5 md:gap-10 bg-[#E1E2E5] p-5 lg:p-19 rounded-2xl">
-              <div className="w-full flex flex-col gap-5.5">
-                <div>
-                  <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
-                    Design Process
-                  </h3>
-                  <p className="w-30 max-w-[165px] border-3 rounded-2xl border-[#4FBDD2]"></p>
-                </div>
-              </div>
-              <div>
-                <img className="w-full h-full" src={project?.designImage} alt="" />
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-between bg-[#E1E2E5] p-5 lg:p-19 rounded-2xl">
-              <div className="flex flex-col gap-6">
-                <div>
-                  <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
-                    Empathy Map
-                  </h3>
-                  <p className="w-28 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
-                </div>
-                <p className="max-w-[440px] text-sm lg:text-2xl text-[#313D4F]">
-                  {project?.empathyText}
-                </p>
-              </div>
-              <div className="">
-                <img className="w-full h-full" src={project?.empathyImage} alt="" />
-              </div>
-            </div>
-            <div className="flex flex-col gap-7 bg-[#E1E2E5] p-5 lg:px-15.5 lg:py-10 rounded-2xl">
-              <div className="flex flex-col gap-6">
-                <div>
-                  <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
-                    User Persona
-                  </h3>
-                  <p className="w-28 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
-                </div>
-              </div>
-              <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-[#98B4AA29] rounded-2xl p-5 flex flex-col gap-7.5">
-                  <img src={project?.userImage} className="h-45" alt="" />
-                  <table>
-                    <tbody className="flex flex-col gap-3">
-                      {project?.userData.map((item) => (
-                        <tr className="grid grid-cols-2" key={item?.id}>
-                          <td className="font-bold text-xs lg:text-sm text-[#193767]">
-                            {item?.key}:
-                          </td>
-                          <td className="text-[#5E6B81] text-xs font-medium lg:text-sm xl:text-base">
-                            {item?.value}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <div className="col-span-12 md:col-span-6 lg:col-span-8 gap-5 grid grid-cols-12">
-                  <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
-                    <h3 className="text-base text-[#193767] font-bold">Bio</h3>
-                    <p className="text-[#5E6B81] text-xs lg:text-sm font-medium">
-                      {project?.userBio}
-                    </p>
-                  </div>
-                  <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
-                    <h3 className="text-base text-[#193767] font-bold">Needs</h3>
-                    <ul className="text-[#5E6B81] text-xs md:text-sm ml-6 list-disc">
-                      {project?.userNeeds.map((item) => (
-                        <li key={item.id}>{item.text}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
-                    <h3 className="text-base text-[#193767] font-bold">Pain Points</h3>
-                    <ul className="text-[#5E6B81] text-xs md:text-sm ml-5 list-disc">
-                      {project?.painPoints.map((item) => (
-                        <li key={item.id}>{item.text}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
-                    <h3 className="text-base text-[#193767] font-bold">Goals</h3>
-                    <ul className="text-[#5E6B81] text-xs md:text-sm ml-5 list-disc">
-                      {project?.userGoals.map((item) => (
-                        <li key={item.id}>{item.text}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="hidden bg-[#E1E2E5] py-9 px-26 rounded-2xl">
-              <div className="grid grid-cols-2">
-                <div className="flex flex-col gap-10">
+            {project?.problemsImage && project?.problemsText && (
+              <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-between bg-[#E1E2E5] p-5 lg:p-10 xl:p-19 rounded-2xl">
+                <div className="flex flex-col gap-3 md:gap-6">
                   <div>
-                    <h3 className="text-[#313D4F] font-bold text-[40px]">Style Guide</h3>
-                    <p className="w-[165px] border-3 rounded-2xl border-[#4FBDD2]"></p>
+                    <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
+                      Problems
+                    </h3>
+                    <p className="w-22 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
                   </div>
-                  <div>
-                    <p className="text-3xl font-bold text-dark-text">Colors</p>
-                    <hr className="bg-[#2B2B2B] w-[360px] h-0.5 my-7.5" />
-                    <div className="flex flex-col gap-5.5">
-                      <div className="flex flex-col gap-3.5">
-                        <p className="text-2xl text-black font-medium">Primary Color</p>
-                        <div className="flex gap-5.5">
-                          {project?.primaryColor.map((item) => (
-                            <div key={item?.id} className="flex flex-col items-center gap-2">
-                              <span
-                                style={{ background: item?.color }}
-                                className="rounded border-5 border-[#ECECEC] block w-16 h-16"
-                              ></span>
-                              <p className="text-sm text-[#25282B]">{item?.title}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="flex flex-col gap-3.5">
-                        <p className="text-2xl text-black font-medium">Other Color</p>
-                        <div className="flex gap-5.5">
-                          {project?.otherColor.map((item) => (
-                            <div key={item?.id} className="flex flex-col items-center gap-2">
-                              <span
-                                style={{ background: item?.color }}
-                                className="rounded border-5 border-[#ECECEC] block w-16 h-16"
-                              ></span>
-                              <p className="text-sm text-[#25282B]">{item?.title}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="pt-12 flex flex-col gap-5">
-                  <h3 className="text-3xl font-bold text-[#181818]">Typography</h3>
-                  <p className="w-fit px-4 text-2xl py-5 font-medium text-[#181818] border-y border-[#2B2B2B]">
-                    Otterco Display
+                  <p className="md:max-w-[400px] lg:max-w-[600px] text-sm md:text-base xl:text-xl text-[#313D4F]">
+                    {project?.problemsText}
                   </p>
-                  <div className="mt-5 flex flex-col gap-5">
-                    <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
-                      <p className="text-[#181818] text-3xl font-medium">Big Title </p>
-                      <div className="flex flex-col gap-1.5">
-                        <p className="text-[#181818] text-[10px]">Weight: Bold</p>
-                        <p className="text-[#181818] text-[10px]">Size: 64px</p>
+                </div>
+                <div className="w-[330px] h-[250px]">
+                  <img className="w-full h-full" src={project?.problemsImage} alt="" />
+                </div>
+              </div>
+            )}
+            {project?.designImage && (
+              <div className="flex flex-col items-center gap-5.5 md:gap-10 bg-[#E1E2E5] p-5 lg:p-19 rounded-2xl">
+                <div className="w-full flex flex-col gap-5.5">
+                  <div>
+                    <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
+                      Design Process
+                    </h3>
+                    <p className="w-30 max-w-[165px] border-3 rounded-2xl border-[#4FBDD2]"></p>
+                  </div>
+                </div>
+                <div>
+                  <img className="w-full h-full" src={project?.designImage} alt="" />
+                </div>
+              </div>
+            )}
+            {project?.empathyImage && project?.empathyText && (
+              <div className="flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-between bg-[#E1E2E5] p-5 lg:p-19 rounded-2xl">
+                <div className="flex flex-col gap-6">
+                  <div>
+                    <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
+                      Empathy Map
+                    </h3>
+                    <p className="w-28 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
+                  </div>
+                  <p className="max-w-[440px] text-sm lg:text-2xl text-[#313D4F]">
+                    {project?.empathyText}
+                  </p>
+                </div>
+                <div className="">
+                  <img className="w-full h-full" src={project?.empathyImage} alt="" />
+                </div>
+              </div>
+            )}
+            {project?.userImage &&
+              project?.userBio &&
+              project?.userData &&
+              project?.userNeeds &&
+              project?.painPoints &&
+              project?.userGoals && (
+                <div className="flex flex-col gap-7 bg-[#E1E2E5] p-5 lg:px-15.5 lg:py-10 rounded-2xl">
+                  <div className="flex flex-col gap-6">
+                    <div>
+                      <h3 className="text-[#313D4F] font-bold text-2xl md:text-3xl lg:text-[40px]">
+                        User Persona
+                      </h3>
+                      <p className="w-28 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-12 gap-5">
+                    <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-[#98B4AA29] rounded-2xl p-5 flex flex-col gap-7.5">
+                      <img src={project?.userImage} className="h-45" alt="" />
+                      <table>
+                        <tbody className="flex flex-col gap-3">
+                          {project?.userData.map((item) => (
+                            <tr className="grid grid-cols-2" key={item?.id}>
+                              <td className="font-bold text-xs lg:text-sm text-[#193767]">
+                                {item?.key}:
+                              </td>
+                              <td className="text-[#5E6B81] text-xs font-medium lg:text-sm xl:text-base">
+                                {item?.value}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="col-span-12 md:col-span-6 lg:col-span-8 gap-5 grid grid-cols-12">
+                      <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
+                        <h3 className="text-base text-[#193767] font-bold">Bio</h3>
+                        <p className="text-[#5E6B81] text-xs lg:text-sm font-medium">
+                          {project?.userBio}
+                        </p>
+                      </div>
+                      <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
+                        <h3 className="text-base text-[#193767] font-bold">Needs</h3>
+                        <ul className="text-[#5E6B81] text-xs md:text-sm ml-6 list-disc">
+                          {project?.userNeeds.map((item) => (
+                            <li key={item.id}>{item.text}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
+                        <h3 className="text-base text-[#193767] font-bold">Pain Points</h3>
+                        <ul className="text-[#5E6B81] text-xs md:text-sm ml-5 list-disc">
+                          {project?.painPoints.map((item) => (
+                            <li key={item.id}>{item.text}</li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="col-span-12 lg:col-span-6 px-3 rounded-2xl py-4.5 bg-[#98B4AA29] flex flex-col gap-3">
+                        <h3 className="text-base text-[#193767] font-bold">Goals</h3>
+                        <ul className="text-[#5E6B81] text-xs md:text-sm ml-5 list-disc">
+                          {project?.userGoals.map((item) => (
+                            <li key={item.id}>{item.text}</li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
-                    <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
-                      <p className="text-[#181818] text-2xl">Title</p>
-                      <div className="flex flex-col gap-1.5">
-                        <p className="text-[#181818] text-[10px]">Weight: Bold</p>
-                        <p className="text-[#181818] text-[10px]">Size: 40px</p>
+                  </div>
+                </div>
+              )}
+            {project?.primaryColor && project?.otherColor && (
+              <div className="hidden bg-[#E1E2E5] py-9 px-26 rounded-2xl">
+                <div className="grid grid-cols-2">
+                  <div className="flex flex-col gap-10">
+                    <div>
+                      <h3 className="text-[#313D4F] font-bold text-[40px]">Style Guide</h3>
+                      <p className="w-[165px] border-3 rounded-2xl border-[#4FBDD2]"></p>
+                    </div>
+                    <div>
+                      <p className="text-3xl font-bold text-dark-text">Colors</p>
+                      <hr className="bg-[#2B2B2B] w-[360px] h-0.5 my-7.5" />
+                      <div className="flex flex-col gap-5.5">
+                        <div className="flex flex-col gap-3.5">
+                          <p className="text-2xl text-black font-medium">Primary Color</p>
+                          <div className="flex gap-5.5">
+                            {project?.primaryColor.map((item) => (
+                              <div key={item?.id} className="flex flex-col items-center gap-2">
+                                <span
+                                  style={{ background: item?.color }}
+                                  className="rounded border-5 border-[#ECECEC] block w-16 h-16"
+                                ></span>
+                                <p className="text-sm text-[#25282B]">{item?.title}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="flex flex-col gap-3.5">
+                          <p className="text-2xl text-black font-medium">Other Color</p>
+                          <div className="flex gap-5.5">
+                            {project?.otherColor.map((item) => (
+                              <div key={item?.id} className="flex flex-col items-center gap-2">
+                                <span
+                                  style={{ background: item?.color }}
+                                  className="rounded border-5 border-[#ECECEC] block w-16 h-16"
+                                ></span>
+                                <p className="text-sm text-[#25282B]">{item?.title}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
-                      <p className="text-[#181818] text-base">Button</p>
-                      <div className="flex flex-col gap-1.5">
-                        <p className="text-[#181818] text-[10px]">Weight: Bold</p>
-                        <p className="text-[#181818] text-[10px]">Size: 20px</p>
+                  </div>
+                  <div className="pt-12 flex flex-col gap-5">
+                    <h3 className="text-3xl font-bold text-[#181818]">Typography</h3>
+                    <p className="w-fit px-4 text-2xl py-5 font-medium text-[#181818] border-y border-[#2B2B2B]">
+                      Otterco Display
+                    </p>
+                    <div className="mt-5 flex flex-col gap-5">
+                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                        <p className="text-[#181818] text-3xl font-medium">Big Title </p>
+                        <div className="flex flex-col gap-1.5">
+                          <p className="text-[#181818] text-[10px]">Weight: Bold</p>
+                          <p className="text-[#181818] text-[10px]">Size: 64px</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
-                      <p className="text-[#181818] text-[10px] font-medium">Text</p>
-                      <div className="flex flex-col gap-1.5">
-                        <p className="text-[#181818] text-[10px]">Weight: Reguler</p>
-                        <p className="text-[#181818] text-[10px]">Size: 18px</p>
+                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                        <p className="text-[#181818] text-2xl">Title</p>
+                        <div className="flex flex-col gap-1.5">
+                          <p className="text-[#181818] text-[10px]">Weight: Bold</p>
+                          <p className="text-[#181818] text-[10px]">Size: 40px</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
-                      <p className="text-[#181818] text-xs font-medium">Medium Text</p>
-                      <div className="flex flex-col gap-1.5">
-                        <p className="text-[#181818] text-[10px]">Weight: Medium</p>
-                        <p className="text-[#181818] text-[10px]">Size: 16px</p>
+                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                        <p className="text-[#181818] text-base">Button</p>
+                        <div className="flex flex-col gap-1.5">
+                          <p className="text-[#181818] text-[10px]">Weight: Bold</p>
+                          <p className="text-[#181818] text-[10px]">Size: 20px</p>
+                        </div>
                       </div>
-                    </div>
-                    <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
-                      <p className="text-[#181818] text-base">Big Text</p>
-                      <div className="flex flex-col gap-1.5">
-                        <p className="text-[#181818] text-[10px]">Weight: Regular</p>
-                        <p className="text-[#181818] text-[10px]">Size: 22px</p>
+                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                        <p className="text-[#181818] text-[10px] font-medium">Text</p>
+                        <div className="flex flex-col gap-1.5">
+                          <p className="text-[#181818] text-[10px]">Weight: Reguler</p>
+                          <p className="text-[#181818] text-[10px]">Size: 18px</p>
+                        </div>
+                      </div>
+                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                        <p className="text-[#181818] text-xs font-medium">Medium Text</p>
+                        <div className="flex flex-col gap-1.5">
+                          <p className="text-[#181818] text-[10px]">Weight: Medium</p>
+                          <p className="text-[#181818] text-[10px]">Size: 16px</p>
+                        </div>
+                      </div>
+                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                        <p className="text-[#181818] text-base">Big Text</p>
+                        <div className="flex flex-col gap-1.5">
+                          <p className="text-[#181818] text-[10px]">Weight: Regular</p>
+                          <p className="text-[#181818] text-[10px]">Size: 22px</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

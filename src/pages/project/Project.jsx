@@ -4,9 +4,13 @@ import WebsiteDesigns from '../../components/projects/WebsiteDesigns';
 import LandingPages from '../../components/projects/LandingPages';
 import Dashboards from '../../components/projects/Dashboards';
 import MobileApps from '../../components/projects/MobileApps';
+import { projects } from '../../data';
 
 function Project() {
   const [tab, setTab] = useState('Website designs');
+
+  const filteredProjects = projects.filter((p) => p.projectType.includes(tab));
+
   return (
     <section className="pt-25 px-5">
       <section className="max-w-[1290px] mx-auto flex flex-col items-center gap-6">
@@ -29,10 +33,18 @@ function Project() {
           ))}
         </div>
         <div className="w-full">
-          <div className="w-full">{tab === 'Website designs' && <WebsiteDesigns />}</div>
-          <div className="w-full">{tab === 'Landing Pages' && <LandingPages />}</div>
-          <div className="w-full">{tab === 'Dashboard Design' && <Dashboards />}</div>
-          <div className="w-full">{tab === 'Mobile App' && <MobileApps />}</div>
+          <div className="w-full">
+            {tab === 'Website designs' && <WebsiteDesigns data={filteredProjects} />}
+          </div>
+          <div className="w-full">
+            {tab === 'Landing Pages' && <LandingPages data={filteredProjects} />}
+          </div>
+          <div className="w-full">
+            {tab === 'Dashboard Design' && <Dashboards data={filteredProjects} />}
+          </div>
+          <div className="w-full">
+            {tab === 'Mobile App' && <MobileApps data={filteredProjects} />}
+          </div>
         </div>
       </section>
     </section>

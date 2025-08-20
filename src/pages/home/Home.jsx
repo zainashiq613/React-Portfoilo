@@ -19,8 +19,11 @@ function Home() {
       <div className="relative w-full flex flex-col items-center overflow-hidden">
         <div className="w-full max-w-[1310px] flex flex-col gap-5 md:gap-17.5">
           <div className="mt-5 w-full flex flex-col gap-2 items-center justify-center">
-            <span className="text-center border border-dark-text px-4.5 py-1 rounded-2xl">
+            <span className="relative text-center flex items-center justify-end border border-dark-text px-4.5 py-1 rounded-2xl">
               Hello!
+              <div className="absolute bottom-6 -right-6">
+                <img className="w-7 h-7" src="/Vector 1 (1).png" alt="" />
+              </div>
             </span>
             <h1 className="text-4xl md:text-6xl font-semibold text-center">
               I’m <span className="text-primary">Hammas</span>,<br />
@@ -28,14 +31,14 @@ function Home() {
             </h1>
           </div>
           <div className="px-5 md:px-10 flex flex-col md:flex-row gap-7 md:items-center justify-between">
-            <div className="w-full max-w-[300px] md:max-w-[420px]">
-              <p className="text-base md:text-xl font-medium text-[#344054]">
+            <div className="w-full md:max-w-[420px]">
+              <p className="text-base text-center md:text-xl font-medium text-[#344054]">
                 I’m <span className="text-primary">Hammas</span> , A product designer from Pakistan,
                 My interests include Web flow, Product Designer, Bubble.io, Graphic Design,
                 Designing Start-ups, Cricket, and Music.
               </p>
             </div>
-            <div className="flex flex-col items-start w-full md:w-fit gap-2">
+            <div className="flex flex-col items-end w-full md:w-fit gap-2">
               <div className="flex items-center gap-1 justify-end">
                 <FaStar fill="#4FBDD2" size={20} />
                 <FaStar fill="#4FBDD2" size={20} />
@@ -43,7 +46,7 @@ function Home() {
                 <FaStar fill="#4FBDD2" size={20} />
                 <FaStar fill="#4FBDD2" size={20} />
               </div>
-              <div className="text-left md:text-right flex flex-col">
+              <div className="text-right flex flex-col">
                 <p className="text-2xl md:text-3xl font-bold text-dark-text">5+ Years</p>
                 <span className="text-sm md:text-base text-secondary">Experience</span>
               </div>

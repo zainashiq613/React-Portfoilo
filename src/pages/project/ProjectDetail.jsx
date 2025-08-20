@@ -28,7 +28,7 @@ function ProjectDetail() {
           />
         </div>
         <div>
-          <div className="flex flex-col gap-12.5">
+          <div className="flex flex-col gap-6 lg:gap-12.5">
             {project?.detailImage && (
               <div className="w-full rounded-2xl bg-[#E1E2E5]">
                 <img className="w-full h-[22%]" src={project?.detailImage} alt="" />
@@ -53,7 +53,7 @@ function ProjectDetail() {
               </div>
             )}
             {project?.id === 7 && (
-              <div className="flex flex-col gap-12.5">
+              <div className="flex flex-col gap-6 lg:gap-12.5">
                 <div className="flex flex-col-reverse md:grid grid-cols-2 items-center gap-10 justify-between bg-[#36393C] p-5 lg:px-17.5 rounded-2xl">
                   <div className="">
                     <img className="w-full h-full" src="/dark-version-web.png" alt="" />
@@ -155,7 +155,7 @@ function ProjectDetail() {
               </div>
             )}
             {project?.id === 10 && (
-              <div className="flex flex-col gap-12.5">
+              <div className="flex flex-col gap-6 lg:gap-12.5">
                 <div className="flex flex-col items-center gap-10 justify-between bg-[#214B56] p-5 md:p-10 rounded-2xl">
                   <div className="flex flex-col gap-6">
                     <div>
@@ -218,7 +218,7 @@ function ProjectDetail() {
               </div>
             )}
             {project?.id === 1 && (
-              <div className="flex flex-col gap-12.5">
+              <div className="flex flex-col gap-6 lg:gap-12.5">
                 <div className="flex flex-col items-center gap-10 justify-between bg-[#214B56] p-5 lg:p-10 rounded-2xl">
                   <div className="flex flex-col gap-6">
                     <div>
@@ -294,7 +294,7 @@ function ProjectDetail() {
               </div>
             )}
             {project?.id === 2 && (
-              <div className="flex flex-col gap-12.5">
+              <div className="flex flex-col gap-6 lg:gap-12.5">
                 <div className="flex flex-col md:grid grid-cols-2 items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
                   <div className="flex flex-col gap-6">
                     <div>

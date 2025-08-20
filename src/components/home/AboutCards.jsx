@@ -13,7 +13,7 @@ function AboutCards() {
         <div className="col-span-12 sm:col-span-6 lg:col-span-3 group w-full h-83 [perspective:1000px]">
           <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div className="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
-              <img className="w-[90%]" src="/linkedin.png" alt="" />
+              <img className="w-[220px] lg:w-[180px] xl:w-[220px]" src="/linkedin.png" alt="" />
             </div>
             <div className="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
               <div className="flex w-full items-center justify-between">
@@ -33,12 +33,12 @@ function AboutCards() {
                 <p>Director</p> |<p>Product Designer</p> | <p>UI/UX</p>
                 <p>Front-End Developer</p> |<p>WordPress Expert</p>
               </div>
-              <p className="text-xs text-[#454545]">
+              <p className="text-[14px] md:text-xs text-[#454545]">
                 I lead teams to create impactful, user-focused digital products using UI/UX design,
                 front-end development, and WordPress. #ui/ux #front-end #wordpress #
                 <span className="text-[#337BFF]">certificate!</span>
               </p>
-              <div className="flex justify-end">
+              <div className="mt-3 md:mt-0 flex justify-end">
                 <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center">
                   <GoArrowUpRight size={25} />
                 </div>
@@ -49,8 +49,8 @@ function AboutCards() {
         <div className="col-span-12 sm:col-span-6 lg:col-span-3 group w-full h-83 [perspective:1000px]">
           <div className="relative w-full h-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
             <div className="absolute w-full h-full bg-white shadow flex items-center justify-center [backface-visibility:hidden] rounded-lg border">
-              <div className="w-[90%] flex justify-center">
-                <img src="/behance.png" alt="" />
+              <div className="flex justify-center">
+                <img className="w-[261px] lg:w-[180px] xl:w-[261px]" src="/behance.png" alt="" />
               </div>
             </div>
             <div className="p-4 absolute w-full h-full bg-white flex flex-col gap-1.5 [transform:rotateY(180deg)] [backface-visibility:hidden] rounded-lg border">
@@ -110,7 +110,7 @@ function AboutCards() {
           <h1 className="text-3xl md:text-4xl font-semibold">
             Have an Awsome Project <br /> Idea? <span className="text-primary">Let’s Discuss</span>
           </h1>
-          <Input cn={'w-full'} />
+          <Input cn={'!w-full'} />
         </div>
         <div className="col-span-12 md:col-span-4 lg:col-span-3 relative bg-white border shadow rounded-2xl overflow-hidden group">
           <div className="pt-6 flex gap-6 flex-col items-center">
@@ -135,7 +135,7 @@ function AboutCards() {
           </div>
         </div>
       </div>
-      <div className="px-5 md:px-10 w-full max-w-[1346px] grid grid-cols-12 gap-7 md:gap-0">
+      <div className="px-5 md:px-10 w-full max-w-[1346px] flex flex-col-reverse md:grid grid-cols-12 gap-7 md:gap-0">
         <div className="col-span-12 md:col-span-6 lg:col-span-5">
           <img className="w-full h-full" src="/pic.png" alt="" />
         </div>

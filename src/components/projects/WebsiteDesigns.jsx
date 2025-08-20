@@ -12,7 +12,7 @@ function WebsiteDesigns({ data }) {
           className="rounded-2xl border p-5 flex flex-col-reverse lg:grid grid-cols-2 items-center gap-4"
         >
           <div className="col-span-1 flex flex-col gap-5">
-            <h2 className="text-3xl md:text-4xl font-bold">{item.title}</h2>
+            <h2 className="hidden lg:block text-3xl md:text-4xl font-bold">{item.title}</h2>
             <p className="text-secondary-text text-sm md:text-base">{item.desc}</p>
             <div className="flex flex-col gap-1.5">
               <h3 className="text-lg md:text-xl font-medium">Key Features:</h3>

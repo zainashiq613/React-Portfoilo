@@ -3,8 +3,10 @@ import { GoArrowUpRight } from 'react-icons/go';
 import Input from '../Input';
 import { MdDownloadForOffline } from 'react-icons/md';
 import Button from '../Button';
+import { useNavigate } from 'react-router';
 
 function AboutCards() {
+  const navigation = useNavigate();
   return (
     <div className="flex flex-col gap-13 items-center justify-center lg:pb-10">
       <div className="px-5 md:px-10 w-full max-w-[1290px] grid grid-cols-12 gap-7.5">
@@ -159,6 +161,7 @@ function AboutCards() {
           </div>
           <div>
             <Button
+              onClick={() => navigation('/contact')}
               text={'Hire Now'}
               cn={'text-sm !px-4'}
               position={'right'}

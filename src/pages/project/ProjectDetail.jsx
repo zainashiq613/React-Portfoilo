@@ -21,7 +21,9 @@ function ProjectDetail() {
             onClick={() => navigation(-1)}
             icon={<FaArrowLeft />}
             position={'left'}
-            cn={'bg-transparent border border-primary !text-primary'}
+            cn={
+              'text-sm !px-4 md:!px-7 md:text-base bg-transparent border border-primary !text-primary'
+            }
             text={'Back to Projects'}
           />
         </div>
@@ -550,6 +552,81 @@ function ProjectDetail() {
                     </div>
                   </div>
                 </div>
+              </div>
+            )}
+            {project?.songs && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.songs} alt="" />
+              </div>
+            )}
+            {project?.screen && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.screen} alt="" />
+              </div>
+            )}
+            {project?.colorScheme && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.colorScheme} alt="" />
+              </div>
+            )}
+            {project?.fontImg && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.fontImg} alt="" />
+              </div>
+            )}
+            {project?.iconsImg && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.iconsImg} alt="" />
+              </div>
+            )}
+            {project?.architecture && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.architecture} alt="" />
+              </div>
+            )}
+            {project?.mblScreen && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.mblScreen} alt="" />
+              </div>
+            )}
+            {project?.mblLogin && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.mblLogin} alt="" />
+              </div>
+            )}
+            {project?.menuImg && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.menuImg} alt="" />
+              </div>
+            )}
+            {project?.explore && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.explore} alt="" />
+              </div>
+            )}
+            {project?.findArtist && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.findArtist} alt="" />
+              </div>
+            )}
+            {project?.featuredArtist && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.featuredArtist} alt="" />
+              </div>
+            )}
+            {project?.albumView && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.albumView} alt="" />
+              </div>
+            )}
+            {project?.playingScreen && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.playingScreen} alt="" />
+              </div>
+            )}
+            {project?.chromeCast && (
+              <div className="w-full rounded-2xl bg-[#E1E2E5]">
+                <img className="w-full h-[22%]" src={project?.chromeCast} alt="" />
               </div>
             )}
           </div>

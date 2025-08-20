@@ -6,10 +6,14 @@ import Button from '../../components/Button';
 import { MdDownloadForOffline } from 'react-icons/md';
 import ScrollText from '../../components/home/ScrollText';
 import AboutCards from '../../components/home/AboutCards';
+import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 const items = ['UX Design', 'App Design', 'Dashboard', 'Wireframe', 'User Research'];
 
 function Home() {
+  const [hover, setHover] = useState(false);
+  const navigation = useNavigate();
   return (
     <section className="pt-20 flex flex-col gap-10 md:gap-20 items-center overflow-hidden">
       <div className="relative w-full flex flex-col items-center overflow-hidden">
@@ -46,24 +50,32 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="absolute md:flex items-center justify-center bottom-20">
+        <div className="absolute md:flex items-center justify-center bottom-10 lg:bottom-18">
           <div className="bg-[#6AC7D980] relative lg:left-10 xl:left-0 flex items-center justify-center rounded-t-full w-[380px] md:w-[690px] lg:w-[710px] h-50 md:h-83 lg:h-90">
             <img
               src="/IMG_0825 1.png"
               className="relative h-80 md:h-108 lg:h-127 bottom-10 md:bottom-12 lg:bottom-25"
               alt=""
             />
-            <div className="absolute bottom-20 backdrop-blur-[5px] flex gap-2 border rounded-3xl p-1">
+            <div className="absolute bottom-10 md:bottom-15 backdrop-blur-[5px] flex gap-2 border rounded-3xl p-1">
               <div>
-                <Button
-                  text={'Portfolio'}
-                  cn={'text-sm !px-2 md:text-base md:!px-7'}
-                  position={'right'}
-                  // icon={<GoArrowUpRight size={25} />}
-                />
+                <button
+                  className={`transition-all duration-500 flex items-center gap-2.5 py-2 rounded-3xl text-white text-sm md:text-base ${
+                    hover ? 'px-2' : 'bg-primary !px-6'
+                  }`}
+                >
+                  Portfolio {!hover && <GoArrowUpRight size={20} />}
+                </button>
               </div>
               <div>
-                <Button text={'Hire Me'} cn={'text-sm !px-2 md:text-base md:!px-7'} />
+                <button
+                  onMouseOver={() => setHover(true)}
+                  onMouseLeave={() => setHover(false)}
+                  onClick={() => navigation('/contact')}
+                  className={`flex px-3 items-center gap-2.5 text-sm py-2 rounded-3xl text-white md:text-base hover:!px-6 bg-transparent transition-all duration-500 hover:bg-primary`}
+                >
+                  Hire Me {hover && <GoArrowUpRight size={20} />}
+                </button>
               </div>
             </div>
           </div>

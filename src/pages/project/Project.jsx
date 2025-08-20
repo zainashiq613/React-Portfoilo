@@ -21,7 +21,7 @@ function Project() {
           {['Website designs', 'Landing Pages', 'Dashboard Design', 'Mobile App'].map((item) => (
             <div key={item}>
               <Button
-                cn={`w-full border border-secondary-text text-xs lg:text-base md:text-[11px] bg-transparent !text-secondary-text ${
+                cn={`w-full border truncate border-secondary-text justify-center text-xs lg:text-base md:text-[11px] bg-transparent !text-secondary-text ${
                   item === tab ? '!bg-primary !border-primary !text-white' : ''
                 }`}
                 text={item}

@@ -5,10 +5,10 @@ const items = ['UX Design', 'App Design', 'Dashboard', 'Wireframe', 'User Resear
 
 function ScrollText() {
   return (
-    <div className="z-3 bg-primary py-5 md:py-7.5">
-      <div className="bg-white py-1">
+    <div className="z-3 bg-primary py-3 md:py-5.5 lg:py-7.5">
+      <div className="bg-white flex items-center py-1">
         <marquee behavior="" scrollamount="15" direction="">
-          <div className="flex items-center gap-3.5">
+          <div className="flex items-center justify-center gap-3.5">
             {items.map((item, idx) => (
               <div className="flex items-center gap-3.5 text-2xl text-dark-text" key={idx}>
                 {item}

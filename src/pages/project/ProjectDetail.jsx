@@ -18,7 +18,7 @@ function ProjectDetail() {
       <div className="max-w-[1280px] w-full flex flex-col gap-3.5">
         <div>
           <Button
-            onClick={() => navigation(-1)}
+            onClick={() => navigation('/project')}
             icon={<FaArrowLeft />}
             position={'left'}
             cn={
@@ -35,7 +35,7 @@ function ProjectDetail() {
               </div>
             )}
             {project?.overViewText && project?.overViewImage && (
-              <div className="flex flex-col md:flex-row items-center gap-10 justify-between p-5 bg-[#E1E2E5] lg:p-19 rounded-2xl">
+              <div className="flex flex-col md:grid grid-cols-2 items-center gap-10 justify-between p-5 bg-[#E1E2E5] lg:p-19 rounded-2xl">
                 <div className="">
                   <img className="w-full h-full" src={project?.overViewImage} alt="" />
                 </div>
@@ -46,7 +46,7 @@ function ProjectDetail() {
                     </h3>
                     <p className="w-[117px] max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
                   </div>
-                  <p className="max-w-[721px] text-sm md:text-base lg:text-2xl font-medium text-[#313D4F]">
+                  <p className="max-w-[721px] text-sm lg:text-2xl font-medium text-[#313D4F]">
                     {project.overViewText}
                   </p>
                 </div>
@@ -54,9 +54,9 @@ function ProjectDetail() {
             )}
             {project?.id === 7 && (
               <div className="flex flex-col gap-12.5">
-                <div className="flex flex-col-reverse md:flex-row items-center gap-10 justify-between bg-[#36393C] p-5 lg:px-17.5 rounded-2xl">
+                <div className="flex flex-col-reverse md:grid grid-cols-2 items-center gap-10 justify-between bg-[#36393C] p-5 lg:px-17.5 rounded-2xl">
                   <div className="">
-                    <img className="w-full h-full" src="/dark-version.png" alt="" />
+                    <img className="w-full h-full" src="/dark-version-web.png" alt="" />
                   </div>
                   <div className="flex flex-col gap-3 md:gap-6">
                     <div>
@@ -91,10 +91,10 @@ function ProjectDetail() {
                     </p>
                   </div>
                   <div className="">
-                    <img className="w-full h-full" src="/dark-mbl-version.png" alt="" />
+                    <img className="w-full h-full" src="/dark-version-mbl.png" alt="" />
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row items-center gap-10 justify-between bg-[#36393C] p-5 lg:px-17.5 rounded-2xl">
+                <div className="flex flex-col md:grid grid-cols-2 items-center gap-10 justify-between bg-[#36393C] p-5 lg:px-17.5 rounded-2xl">
                   <div className="flex flex-col gap-6">
                     <div>
                       <h3 className="text-white font-bold text-2xl lg:text-3xl xl:text-[40px]">
@@ -110,7 +110,7 @@ function ProjectDetail() {
                     </p>
                   </div>
                   <div className="">
-                    <img className="w-full h-full" src="/light-version.png" alt="" />
+                    <img className="w-full h-full" src="/light-version-web.png" alt="" />
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-10 justify-between bg-[#36393C] p-5 md:p-10 rounded-2xl">
@@ -128,7 +128,7 @@ function ProjectDetail() {
                     </p>
                   </div>
                   <div className="">
-                    <img className="w-full h-full" src="/light-mbl-version.png" alt="" />
+                    <img className="w-full h-full" src="/light-version-mbl.png" alt="" />
                   </div>
                 </div>
               </div>
@@ -150,7 +150,7 @@ function ProjectDetail() {
                   </p>
                 </div>
                 <div className="">
-                  <img className="w-full h-full" src="/shiftwrox-mbl-app.png" alt="" />
+                  <img className="w-full h-full" src="/shiftworx-mbl.png" alt="" />
                 </div>
               </div>
             )}
@@ -174,7 +174,7 @@ function ProjectDetail() {
                     </p>
                   </div>
                   <div className="">
-                    <img className="w-full h-full" src="/vender-flow.png" alt="" />
+                    <img className="w-full h-full" src="/vendor-flow.png" alt="" />
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-10 justify-between bg-[#214B56] p-5 md:p-10 rounded-2xl">
@@ -200,7 +200,7 @@ function ProjectDetail() {
               </div>
             )}
             {project?.websiteDesignImg && (
-              <div className="flex flex-col md:flex-row items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
+              <div className="grid md:grid-cols-2 md:flex-row items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
                 <div className="flex flex-col gap-3 md:gap-6">
                   <div>
                     <h3 className="text-white font-bold text-2xl lg:text-3xl xl:text-[40px]">
@@ -255,7 +255,7 @@ function ProjectDetail() {
                     <img className="w-full h-full" src={project?.riderApp} alt="" />
                   </div>
                 </div>
-                <div className="flex flex-col-reverse md:flex-row items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
+                <div className="flex flex-col-reverse md:grid grid-cols-2 items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
                   <div className="">
                     <img className="w-full h-full" src={project?.merchantDashboard} alt="" />
                   </div>
@@ -273,7 +273,7 @@ function ProjectDetail() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-row items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
+                <div className="flex flex-col md:grid grid-cols-2 items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
                   <div className="flex flex-col gap-6">
                     <div>
                       <h3 className="text-white font-bold text-2xl lg:text-3xl xl:text-[40px]">
@@ -295,7 +295,7 @@ function ProjectDetail() {
             )}
             {project?.id === 2 && (
               <div className="flex flex-col gap-12.5">
-                <div className="flex flex-col md:flex-row items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
+                <div className="flex flex-col md:grid grid-cols-2 items-center gap-10 justify-between bg-[#214B56] p-5 lg:px-17.5 rounded-2xl">
                   <div className="flex flex-col gap-6">
                     <div>
                       <h3 className="text-white font-bold text-2xl md:text-3xl lg:text-4xl xl:text-[40px]">
@@ -385,7 +385,7 @@ function ProjectDetail() {
                     {project?.empathyText}
                   </p>
                 </div>
-                <div className="">
+                <div className="max-w-[400px]">
                   <img className="w-full h-full" src={project?.empathyImage} alt="" />
                 </div>
               </div>
@@ -459,41 +459,45 @@ function ProjectDetail() {
                 </div>
               )}
             {project?.primaryColor && project?.otherColor && (
-              <div className="hidden bg-[#E1E2E5] py-9 px-26 rounded-2xl">
-                <div className="grid grid-cols-2">
-                  <div className="flex flex-col gap-10">
+              <div className="bg-[#E1E2E5] p-5 md:py-9 lg:px-26 rounded-2xl">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+                  <div className="flex flex-col gap-3 md:gap-10">
                     <div>
-                      <h3 className="text-[#313D4F] font-bold text-[40px]">Style Guide</h3>
-                      <p className="w-[165px] border-3 rounded-2xl border-[#4FBDD2]"></p>
+                      <h3 className="text-[#313D4F] font-bold text-2xl lg:text-[40px]">
+                        Style Guide
+                      </h3>
+                      <p className="w-22 max-w-[165px] border-2 md:border-3 rounded-2xl border-[#4FBDD2]"></p>
                     </div>
                     <div>
-                      <p className="text-3xl font-bold text-dark-text">Colors</p>
-                      <hr className="bg-[#2B2B2B] w-[360px] h-0.5 my-7.5" />
+                      <p className="text-lg md:text-3xl font-bold text-dark-text">Colors</p>
+                      <hr className="bg-[#2B2B2B] md:w-[300px] h-0.5 my-3 md:my-7.5" />
                       <div className="flex flex-col gap-5.5">
                         <div className="flex flex-col gap-3.5">
-                          <p className="text-2xl text-black font-medium">Primary Color</p>
+                          <p className="text-xl md:text-2xl text-black font-medium">
+                            Primary Color
+                          </p>
                           <div className="flex gap-5.5">
                             {project?.primaryColor.map((item) => (
                               <div key={item?.id} className="flex flex-col items-center gap-2">
                                 <span
                                   style={{ background: item?.color }}
-                                  className="rounded border-5 border-[#ECECEC] block w-16 h-16"
+                                  className="rounded border-5 border-[#ECECEC] block w-10 h-10 md:w-16 md:h-16"
                                 ></span>
-                                <p className="text-sm text-[#25282B]">{item?.title}</p>
+                                <p className="text-xs text-[#25282B]">{item?.title}</p>
                               </div>
                             ))}
                           </div>
                         </div>
                         <div className="flex flex-col gap-3.5">
-                          <p className="text-2xl text-black font-medium">Other Color</p>
+                          <p className="text-xl md:text-2xl text-black font-medium">Other Color</p>
                           <div className="flex gap-5.5">
                             {project?.otherColor.map((item) => (
                               <div key={item?.id} className="flex flex-col items-center gap-2">
                                 <span
                                   style={{ background: item?.color }}
-                                  className="rounded border-5 border-[#ECECEC] block w-16 h-16"
+                                  className="rounded border-5 border-[#ECECEC] block w-10 md:w-10 h-10 md:h-10"
                                 ></span>
-                                <p className="text-sm text-[#25282B]">{item?.title}</p>
+                                <p className="text-xs text-[#25282B]">{item?.title}</p>
                               </div>
                             ))}
                           </div>
@@ -501,48 +505,48 @@ function ProjectDetail() {
                       </div>
                     </div>
                   </div>
-                  <div className="pt-12 flex flex-col gap-5">
+                  <div className="pt-12 flex flex-col gap-3 md:gap-5">
                     <h3 className="text-3xl font-bold text-[#181818]">Typography</h3>
-                    <p className="w-fit px-4 text-2xl py-5 font-medium text-[#181818] border-y border-[#2B2B2B]">
+                    <p className="w-full px-4 text-2xl py-2 md:py-5 font-medium text-[#181818] border-y border-[#2B2B2B]">
                       Otterco Display
                     </p>
-                    <div className="mt-5 flex flex-col gap-5">
-                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                    <div className="mt-5 flex flex-col gap-3 md:gap-5">
+                      <div className="items-center gap-7 w-full grid grid-cols-2 border">
                         <p className="text-[#181818] text-3xl font-medium">Big Title </p>
                         <div className="flex flex-col gap-1.5">
                           <p className="text-[#181818] text-[10px]">Weight: Bold</p>
                           <p className="text-[#181818] text-[10px]">Size: 64px</p>
                         </div>
                       </div>
-                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                      <div className="items-center gap-7 w-full grid grid-cols-2 border">
                         <p className="text-[#181818] text-2xl">Title</p>
                         <div className="flex flex-col gap-1.5">
                           <p className="text-[#181818] text-[10px]">Weight: Bold</p>
                           <p className="text-[#181818] text-[10px]">Size: 40px</p>
                         </div>
                       </div>
-                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                      <div className="items-center gap-7 w-full grid grid-cols-2 border">
                         <p className="text-[#181818] text-base">Button</p>
                         <div className="flex flex-col gap-1.5">
                           <p className="text-[#181818] text-[10px]">Weight: Bold</p>
                           <p className="text-[#181818] text-[10px]">Size: 20px</p>
                         </div>
                       </div>
-                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                      <div className="items-center gap-7 w-full grid grid-cols-2 border">
                         <p className="text-[#181818] text-[10px] font-medium">Text</p>
                         <div className="flex flex-col gap-1.5">
                           <p className="text-[#181818] text-[10px]">Weight: Reguler</p>
                           <p className="text-[#181818] text-[10px]">Size: 18px</p>
                         </div>
                       </div>
-                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                      <div className="items-center gap-7 w-full grid grid-cols-2 border">
                         <p className="text-[#181818] text-xs font-medium">Medium Text</p>
                         <div className="flex flex-col gap-1.5">
                           <p className="text-[#181818] text-[10px]">Weight: Medium</p>
                           <p className="text-[#181818] text-[10px]">Size: 16px</p>
                         </div>
                       </div>
-                      <div className="items-center gap-7 w-[300px] grid grid-cols-2 border">
+                      <div className="items-center gap-7 w-full grid grid-cols-2 border">
                         <p className="text-[#181818] text-base">Big Text</p>
                         <div className="flex flex-col gap-1.5">
                           <p className="text-[#181818] text-[10px]">Weight: Regular</p>

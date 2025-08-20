@@ -43,7 +43,7 @@ function Home() {
                 <FaStar fill="#4FBDD2" size={20} />
                 <FaStar fill="#4FBDD2" size={20} />
               </div>
-              <div className="text-left flex flex-col">
+              <div className="text-left md:text-right flex flex-col">
                 <p className="text-2xl md:text-3xl font-bold text-dark-text">5+ Years</p>
                 <span className="text-sm md:text-base text-secondary">Experience</span>
               </div>

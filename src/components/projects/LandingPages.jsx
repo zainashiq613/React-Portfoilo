@@ -29,7 +29,10 @@ function LandingPages({ data }) {
             <div className="flex items-center gap-5">
               <button
                 style={{ background: item.color }}
-                onClick={() => navigation(`/project/${item.id}`)}
+                onClick={() => {
+                  navigation(`/project/${item.id}`);
+                  window.scroll(0, 0);
+                }}
                 className="flex px-5 items-center text-sm md:text-base gap-2 bg-primary text-white rounded-3xl  py-2"
               >
                 View Case Study {<CgArrowTopRight size={20} />}
@@ -39,7 +42,6 @@ function LandingPages({ data }) {
                   color: item.color,
                   border: `1px solid ${item.color}`,
                 }}
-                onClick={() => navigation(`/project/${item.id}`)}
                 className="flex px-5 items-center text-sm md:text-base gap-2 bg-transparent text-primary rounded-3xl border border-primary py-2"
               >
                 View Live

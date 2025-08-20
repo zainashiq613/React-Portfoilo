@@ -135,7 +135,7 @@ function AboutCards() {
           </div>
         </div>
       </div>
-      <div className="px-5 md:px-10 w-full max-w-[1346px] flex flex-col-reverse md:grid grid-cols-12 gap-7 md:gap-0">
+      <div className="px-5 md:px-10 w-full max-w-[1346px] grid grid-cols-12 gap-7 md:gap-0">
         <div className="col-span-12 md:col-span-6 lg:col-span-5">
           <img className="w-full h-full" src="/pic.png" alt="" />
         </div>

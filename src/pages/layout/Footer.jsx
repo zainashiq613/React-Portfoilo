@@ -6,13 +6,13 @@ function Footer() {
         <div className="text-white">h.mhammas@gmail.com</div>
         <div className="flex gap-2.5">
           <div>
-            <img className="w-10 md:w-12" src="/facebook 1.png" alt="" />
+            <img className="w-8" src="/facebook 1.png" alt="" />
           </div>
           <div>
-            <img className="w-10 md:w-12" src="/instagram 1.png" alt="" />
+            <img className="w-8" src="/instagram 1.png" alt="" />
           </div>
           <div>
-            <img className="w-10 md:w-12" src="/linkedin 1.png" alt="" />
+            <img className="w-8" src="/linkedin 1.png" alt="" />
           </div>
         </div>
         {/* </div> */}

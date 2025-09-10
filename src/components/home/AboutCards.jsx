@@ -40,6 +40,7 @@ function AboutCards() {
               </p>
               <div className="mt-3 md:mt-0 flex justify-end">
                 <a
+                  target="_blank"
                   href="https://www.linkedin.com/in/hammas-munir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                   className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center"
                 >
@@ -78,6 +79,7 @@ function AboutCards() {
               </div>
               <div className="flex justify-end">
                 <a
+                  target="_blank"
                   href="https://www.behance.net/hammasmunir3"
                   className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center"
                 >
@@ -99,12 +101,12 @@ function AboutCards() {
               </span>
             </div>
           </div>
-          <p className="text-[#555555E5] text-sm md:text-base lg:text-sm">
+          <p className="text-[#555555E5] text-sm md:text-base">
             I hold a Bachelor's degree in design and bring over 5 years of experience in creating
             impactful digital products. My journey began in graphic design, but my passion for
             solving user problems led me into product and user experience design.
           </p>
-          <p className="text-[#555555E5] text-sm md:text-base lg:text-sm">
+          <p className="text-[#555555E5] text-sm md:text-base">
             Throughout my career, I’ve worked with multiple software houses and start-ups,
             collaborating with cross-functional teams and mentors. I've successfully delivered 50+
             projects, helping businesses turn ideas into user-friendly, functional solutions.

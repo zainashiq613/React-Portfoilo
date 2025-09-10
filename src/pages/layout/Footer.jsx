@@ -3,7 +3,9 @@ function Footer() {
     <section className="relative py-5">
       <section className="mt-3 rounded-lg p-4 flex items-center bg-primary justify-between max-w-[1440px] mx-auto">
         {/* <div className="bg-primary rounded-lg w-full flex items-center justify-between px-5 py-2"> */}
-        <div className="text-white">h.mhammas@gmail.com</div>
+        <a href="mailto:h.mhammas@gmail.com" className="text-white">
+          h.mhammas@gmail.com
+        </a>
         <div className="flex gap-4">
           <a className="transition-all duration-500 transform hover:scale-130" href="#">
             <img className="w-8 md:w-12" src="/facebook 1.png" alt="" />

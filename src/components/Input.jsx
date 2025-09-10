@@ -15,13 +15,20 @@ function Input({ cn }) {
             <MdEmail fill="#4FBDD2" size={30} />
           </div>
           <input
+            value={'h.mhammas@gmail.com'}
             className="text-[#282828] text-sm md:text-base font-bold bg-white w-[calc(100%-50px)] outline-none h-full"
-            placeholder="h.mhammas@gmail.com"
+            // placeholder="h.mhammas@gmail.com"
             type="email"
+            readOnly
           />
         </div>
         <div className="col-span-2 flex justify-end">
-          <Button text={'Send'} cn={'underline !px-2 md:!px-4 md:text-base text-sm'} />
+          <a
+            href="mailto:h.mhammas@gmail.com"
+            className="flex items-center gap-2 bg-[#4FBDD2] text-white rounded-3xl px-6 py-2 hover:bg-[#31A9C0] underline"
+          >
+            Send
+          </a>
         </div>
       </div>
       <div className="w-full flex flex-wrap gap-x-10 gap-y-3 justify-center md:flex-row md:items-center">

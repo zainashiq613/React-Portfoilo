@@ -63,6 +63,10 @@ function Home() {
             <div className="absolute bottom-10 md:bottom-15 backdrop-blur-[5px] flex gap-2 border rounded-3xl p-1">
               <div>
                 <button
+                  onClick={() => {
+                    navigation('/project');
+                    window.scroll(0, 0);
+                  }}
                   className={`transition-all duration-500 flex items-center gap-2.5 py-2 rounded-3xl text-white text-sm md:text-base ${
                     hover ? 'px-2' : 'bg-primary !px-6'
                   }`}

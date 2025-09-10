@@ -39,9 +39,12 @@ function AboutCards() {
                 <span className="text-[#337BFF]">certificate!</span>
               </p>
               <div className="mt-3 md:mt-0 flex justify-end">
-                <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center">
+                <a
+                  href="https://www.linkedin.com/in/hammas-munir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center"
+                >
                   <GoArrowUpRight size={25} />
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -74,9 +77,12 @@ function AboutCards() {
                 <img className="w-full h-full object-cover" src="/image 24979.png" alt="" />
               </div>
               <div className="flex justify-end">
-                <div className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center">
+                <a
+                  href="https://www.behance.net/hammasmunir3"
+                  className="bg-primary text-white rounded-full w-12 h-12 flex items-center justify-center"
+                >
                   <GoArrowUpRight size={25} />
-                </div>
+                </a>
               </div>
             </div>
           </div>

@@ -6,11 +6,15 @@ import Input from '../../components/Input';
 function Contact() {
   const links = [
     {
-      link: '',
+      link: 'https://www.linkedin.com/in/hammas-munir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       icon: <BiLogoLinkedin />,
       title: 'LinkedIn',
     },
-    { link: '', icon: <SlSocialBehance size={20} />, title: 'Behance' },
+    {
+      link: 'https://www.behance.net/hammasmunir3',
+      icon: <SlSocialBehance size={20} />,
+      title: 'Behance',
+    },
     { link: '', icon: <PiWhatsappLogoLight size={20} />, title: 'WhatsApp' },
     { link: '', icon: <SlSocialInstagram size={20} />, title: 'Instagram' },
     { link: '', icon: <BiLogoFacebookCircle size={20} />, title: 'Facebook' },
@@ -32,8 +36,9 @@ function Contact() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {links.map((item, index) => (
               <a
+                target="_blank"
                 href={item.link}
-                className="text-dark-text border border-[#BBBCBF] px-5 py-1.5 rounded-4xl"
+                className="text-dark-text border duration-500 hover:bg-gray-300 border-[#BBBCBF] px-5 py-1.5 rounded-4xl"
                 key={index}
               >
                 <div className="flex justify-center items-center gap-2">
